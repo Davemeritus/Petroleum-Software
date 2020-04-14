@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/petro-calc.css">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap" rel="stylesheet">
+    <title>Flow Rate</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>FLOW RATE</h1>
+            <form id="w-area">
+            <ul>
+            <li>
+            <div class="Calculate">
+                <label for="flowrate-q">ABSOLUTE PERMEABILITY,    k:</label>
+                <input type="text" id="perm-k" size="20" placeholder="0.00 md">
+                </div>
+            </li>
+            <li>
+            <div class="Calculate">
+                <label for="flowrate-q">PRESSURE,p   :</label>
+                <input type="text" id="pressure-p" size="30" placeholder="0.00 psia">
+                </div>
+            </li>
+            <li>
+            <div class="Calculate">
+                <label for="flowrate-q">VISCOSITY:</label>
+                <input type="text" id="viscosity" size="30"  placeholder="0.00 cp">
+                </div>
+            </li>
+            <li>
+            <div class="Calculate">
+                <label for="flowrate-q">DISTANCE,L:</label>
+                <input type="text" id="distance-l" size="30" placeholder="0.00 ft">
+                </div>
+            </li>
+            <li>
+            <div class="Calculate">
+                <label for="flowrate-q">AREA:</label>
+                <input type="text" id="area" size="30" placeholder="0.00 ft-squared">
+                </div>
+            </li>
+            <li>
+                <div class="group calc">
+                    <p>
+                    <label for="btn-estimate">Click to Calculate:</label>
+                    <input type="submit" value="Final Answer" size="20" id="btn-calculate">
+                    <input type="text" id="txt-estimate" size="20" placeholder="0.00 bbl/day">
+                    </p>
+                    <div id="results"></div>
+            </li>
+            </ul>
+        </div>
+    </form>
+        <div class="links">
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="flow_rate.html">FLOW RATE</a></li>
+            <li><a href="apparent_velocity.html">APPARENT VELOCITY</a></li>
+            <li><a href="actual_fluid_velocity.html">ACTUAL FLUID VELOCITY</a></li>
+        </ul> 
+        </div>
+    </div>
+    <script src="../JS/petrocalc.js" type="text/javascript"></script>   
+</body>
+</html>
