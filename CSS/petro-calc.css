@@ -70,7 +70,7 @@ li {
 /* media queries */
 @media(max-width:768px){
     body {
-        background: url(../img/background.png) no-repeat
+        background: url(../img/background.jpg) no-repeat
         center center/cover;
         height: 600px;
         margin: auto;
