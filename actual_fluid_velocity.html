@@ -3,39 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/petro-calc.css">
+    <link rel="stylesheet" href="./css/petro-calc.css">
     <link href="https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap" rel="stylesheet">
-    <title>Flow Rate</title>
+    <title>Absolute Fluid Velocity</title>
 </head>
 <body>
     <div class="container">
         <div class="main">
-            <h1>FLOW RATE</h1>
+            <h1>ACTUAL FLUID VELOCITY</h1>
             <form id="w-area">
             <ul>
             <li>
             <div class="Calculate">
-                <label for="flowrate-q">ABSOLUTE PERMEABILITY,    k:</label>
-                <input type="text" id="perm-k" size="20" placeholder="0.00 md">
+                <label for="flowrate-q">FLOW RATE, q   :</label>
+                <input type="text" id="flowrate-q" size="30" placeholder="0.00 bbl/day">
                 </div>
             </li>
             <li>
             <div class="Calculate">
-                <label for="flowrate-q">PRESSURE,p   :</label>
-                <input type="text" id="pressure-p" size="30" placeholder="0.00 psia">
-                </div>
-            </li>
-            <li>
-            <div class="Calculate">
-                <label for="flowrate-q">VISCOSITY:</label>
-                <input type="text" id="viscosity" size="30"  placeholder="0.00 cp">
-                </div>
-            </li>
-            <li>
-            <div class="Calculate">
-                <label for="flowrate-q">DISTANCE,L:</label>
-                <input type="text" id="distance-l" size="30" placeholder="0.00 ft">
+                <label for="flowrate-q">POROSITY:</label>
+                <input type="text" id="poro-p" size="30" placeholder="0.00">
                 </div>
             </li>
             <li>
@@ -45,16 +33,16 @@
                 </div>
             </li>
             <li>
-                <div class="group calc">
-                    <p>
+            <div class="group calc">
+                <p>
                     <label for="btn-estimate">Click to Calculate:</label>
-                    <input type="submit" value="Final Answer" size="20" id="btn-calculate">
-                    <input type="text" id="txt-estimate" size="20" placeholder="0.00 bbl/day">
-                    </p>
+                    <input type="submit" value="Final Answer" id="btn-calculate">
+                    <input type="text" id="txt-estimate" placeholder="0.00 ft/day">
+                 </p>
                     <div id="results"></div>
-            </li>
-            </ul>
         </div>
+    </li>
+    </ul>
     </form>
         <div class="links">
             <ul>
@@ -65,6 +53,6 @@
         </ul> 
         </div>
     </div>
-    <script src="../JS/petrocalc.js" type="text/javascript"></script>   
+    <script src="./js/actual.js" type="text/javascript"></script>  
 </body>
 </html>
