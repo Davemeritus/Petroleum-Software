@@ -1,34 +1,42 @@
-body{
-    margin: auto;
-    overflow: auto;
-    height: 600px;
-    max-width: 900px;
+*{
+    box-sizing: border-box;
 }
-
-
-
-
+body{
+    margin: 0;
+    overflow: auto;  
+}
+.navbar{
+    min-height: 10vh;
+}
 .site-footer{
     background-color: blue;
     color: #fff;
+    height: 80px;
     margin-top: 10px;
     padding-top: 20px;
     text-align: center;
-
 }
-
+.content{
+    margin: 53px 50px;
+    padding-bottom: 50px;
+}
+.footer{
+ min-height: 10vh;
+ width: 100%;
+ color: white;
+ text-align: center;
+ position: fixed;
+ bottom: 0;
+}
 .nav {
     background-color: blue;
     color: #fff;
     margin-top: 30px;
     padding-top: 40px;
-
 }
-p.index{
+.index{
     font-size: 30px;
     line-height: 1.8em;
-    padding:0px;
-    font-size:30px;
 }
 
 
